@@ -1,0 +1,40 @@
+/*Clients*/
+
+.clients {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 30px;
+    justify-content: center;
+ 
+  
+  
+    &__item {
+    list-style: none;
+    width: 170px;
+    height: 92px;
+  }
+
+  
+    &__link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    color: var(--second-light-txt-cl);
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+   
+    
+    transition: color var(--animation), border-color var(--animation);
+  }
+
+
+    &__link:hover,
+    &__link:focus {
+    color: var(--accent-bg-cl);
+    border-color: var(--accent-bg-cl);
+  }
+}

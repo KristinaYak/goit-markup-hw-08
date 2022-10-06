@@ -1,0 +1,81 @@
+/*our team*/
+
+.socials {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    justify-content: center;
+    text-align: center;
+ 
+ 
+ 
+    &__item {
+    list-style: none;
+    text-align: left;
+    display: block;
+  }
+    &__link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    color: var(--second-light-txt-cl);
+    background-color: var(--main-bg-cl);
+    justify-content: center;
+    align-items: center;
+    transition: color var(--animation), background-color var(--animation);
+  
+    border-radius: 50%;
+  }
+  
+    &__link:hover,
+    &__link:focus {
+    color: var(--main-bg-cl);
+    background-color: var(--accent-bg-cl);
+  }
+  
+    &__icon {
+    fill: currentColor;}
+  
+  
+  
+    &__link--icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    color: var(--main-bg-cl);
+    background-color: rgba(255, 255, 255, 0.1);
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color var(--animation);
+  }
+
+    &__link--icon:hover,
+    &__link--icon:focus {
+    background-color: var(--accent-txt-cl);
+  }
+
+    &__link--icon.current {
+    background-color: var(--accent-bg-cl);
+  }
+
+    &__title {
+        font-family: "Roboto";
+    color: var(--main-bg-cl);
+   font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+    &__list {
+    display: flex;
+    gap: 10px;
+  }
+    &__nav {
+    margin-left: 70px;
+  }
+}

@@ -1,0 +1,26 @@
+/*Footer*/
+.footer {
+    background: var(--secondary-bg-cl);
+    padding-top: 60px;
+    padding-bottom: 60px;
+ 
+
+
+    &__nav {
+    display: flex;
+    align-items: baseline;
+  }
+  
+    &__logo {
+    font-family: "Raleway", sans-serif;
+    font-style: normal;
+    text-decoration: none;
+  @include logo;
+    color: var(--main-bg-cl);
+  }
+
+
+    &__logo.active {
+    color: var(--accent-txt-cl);
+  }
+}

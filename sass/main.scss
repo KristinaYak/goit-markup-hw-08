@@ -1,0 +1,56 @@
+@import "./utils/variables";
+@import "./utils/vissually-hidden";
+
+@import './components/container';
+
+/*nav*/
+@import './components/nav';
+
+
+
+/*logo*/
+@import "./components/logo";
+
+/*header*/
+@import './components/header';
+
+/*section*/
+@import './components/section';
+
+/*btn*/
+@import './components/btn';
+
+
+/*About us*/
+@import './components/thumb';
+
+/*about us*/
+@import './utils/overlay';
+
+/*our team*/
+@import './components/team';
+
+@import './components/socials';
+
+/*Clients*/
+@import './components/clients';
+
+/*Footer*/
+@import './components/footer';
+@import './components/adress';
+
+/*Form*/
+@import './components/form';
+
+/*modal*/
+@import './components/backdrop';
+@import './components/modal';
+
+/*Register form*/
+@import './components/register-form';
+
+/*mixin*/
+@import './utils/mixin';
+
+
+

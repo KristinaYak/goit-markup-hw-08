@@ -1,0 +1,14 @@
+.nav__logo {
+    font-family: "Raleway", sans-serif;
+    text-decoration: none;
+
+    @include logo;
+    color: var(--second-txt-cl);
+  
+  
+ &.current {
+    color: var(--accent-txt-cl);
+  }
+}
+  
+ 

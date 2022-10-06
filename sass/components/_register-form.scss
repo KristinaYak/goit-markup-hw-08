@@ -1,0 +1,168 @@
+/*Register form*/
+
+.register__form {
+  display: block;
+  text-align: center;
+  margin-bottom: 12px;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: var(23 /20);
+  text-align: center;
+  letter-spacing: 0.03em;
+
+  color: var(--main-txt-cl);
+
+
+  &--group {
+  margin-bottom: 20px;
+}
+
+
+  &--field {
+  position: relative;
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+  &--label {
+  display: block;
+  font-family: inherit;
+  font-style: normal;
+
+  @include fonts;
+
+  color: var(--light-txt-cl);
+}
+
+
+  &--input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding-left: 40px;
+  padding-right: 40px;
+
+  outline: transparent;
+  transition: border var(--animation);
+}
+
+
+  &--input:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+
+  &--icon {
+  position: absolute;
+  top: 63%;
+  right: 62%;
+  transform: translateY(-50%);
+  transition: fill var(--animation);
+}
+
+
+  &--input:focus + &--icon {
+  fill: var(--accent-txt-cl);
+}
+
+  &--heading {
+  display: block;
+  margin-bottom: 4px;
+
+  @include fonts;
+
+  color: var(--light-txt-cl);
+}
+
+
+  &--message {
+  display: block;
+  width: 100%;
+  height: 120px;
+  padding: 12px 16px;
+  resize: none;
+  outline: transparent;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+
+  transition: border var(--animation);
+}
+
+
+  &--message:focus {
+  border: 1px solid #2196f3;
+  border-radius: 4px;
+}
+
+  &--message::placeholder {
+    
+  @include fonts;
+
+  color: rgba(117, 117, 117, 0.5);
+}
+
+
+  &--agreement {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  gap: 7px;
+
+  height: 24px;
+}
+
+
+  &--checkbox:checked + &--icons .icon-check {
+  opacity: 1;
+}
+
+
+  &--checkbox:checked + &--icons .icon-uncheck {
+  opacity: 0;
+}
+
+  &--desk {
+  user-select: none;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: var(24 / 14);
+
+  letter-spacing: 0.03em;
+
+  color: var(--light-txt-cl);
+}
+
+  &--link {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: var(24 / 14);
+
+  letter-spacing: 0.03em;
+  text-decoration-line: underline;
+
+  color: var(--accent-txt-cl);
+}
+
+  &--btn {
+  display: block;
+  margin: auto;
+}
+}
+
+
+.icon-check {
+  opacity: 0;
+  transition: opacity var(--animation);
+}
+.icon-uncheck {
+  opacity: 1;
+  transition: opacity var(--animation);
+}

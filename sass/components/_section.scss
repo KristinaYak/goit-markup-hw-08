@@ -1,0 +1,92 @@
+.section__nav {
+    width: 1600px;
+    height: 600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    margin-left: auto;
+    margin-right: auto;
+  
+    background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url(../images/backgroundimage.jpg);
+  
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-color: var(--secondary-bg-cl);
+    text-align: center;
+  
+
+
+    &--title {
+    font-family: "Roboto", sans-serif;
+    font-style: normal;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    letter-spacing: 0.06em;
+    color: var(--main-bg-cl);
+    margin-bottom: 30px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+    
+    &--title {
+    margin-bottom: 30px;
+    margin-top: 0;
+    text-align: center;
+}
+}
+
+/*Наші особливості*/
+
+.section__feature {
+    padding-top: 94px;
+
+  
+  
+    &-list {
+    display: flex;
+    gap: 30px;
+  }
+    &-item {
+    width: 260px;
+  }
+}
+
+/*About us*/
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  
+    
+    
+    &__title {
+    font-family: "Roboto", sans-serif;
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    color: var(--main-txt-cl);
+    letter-spacing: 0.03em;
+    color: var(--main-txt-cl);
+  }
+  
+    &__title {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+/*our team*/
+
+.section__team {
+    background: var(--light-bg-cl);
+  }
