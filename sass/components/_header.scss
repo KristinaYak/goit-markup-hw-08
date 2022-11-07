@@ -18,7 +18,7 @@
     color: var(--accent-txt-cl);
   }
   
-  .link.current {
+  .link .current {
     color: var(--accent-txt-cl);
     transition: color var(--animation);
   }
@@ -37,3 +37,10 @@
   
     border-radius: 2px;
   } 
+
+  .header {
+    @media screen and (min-width: 480px) {
+      position: relative;
+    }
+  }
+

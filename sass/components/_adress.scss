@@ -6,14 +6,31 @@
 
 
     &__item {
-    text-align: left;
+   
     display: block;
+    text-align: center;
+    margin-bottom: 60px;
+
+    @media screen and (min-width: 768px) {
+      // margin-left: 76px;
+     
+    }
+
+    @media screen and (min-width: 1200px) {
+      // margin-left: 76px;
+   text-align: left;
+   display: block;
+     
+     
+    }
   }
   
 
 
     &__item:not(:last-child) {
-    margin-bottom: 9px;
+   
+    margin-bottom: 8px;
+   
   }
 
 
@@ -51,3 +68,6 @@
     color: var(--accent-txt-cl);
   }
 }
+
+
+

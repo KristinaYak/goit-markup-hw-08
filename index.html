@@ -24,11 +24,12 @@
     <header class="header">
       <div class="container header__container">
       <!--Menu Nav-->
-      <nav class="nav">
+       <nav class="nav">
         <a class="logo nav__logo current" href="logo"
           >Web<span class="nav__logo">Studio</span></a
         >
-    <ul class="nav__list list">
+       
+    <ul class="nav__list list ">
           <li class="nav__item">
             <a class="nav__link link current" href="студія">Студія</a>
           </li>
@@ -41,8 +42,8 @@
         </ul>
       </nav>
     
-    <ul class=" nav__list list nav__list--contacts">
-        <li class="nav__item  nav__item--socials">
+     <ul class=" nav__list list nav__list--contacts">
+        <li class="nav__item  nav__item--socials ">
           <a class="nav__contacts nav__contacts--link link" href="mailto:info@devstudio.com">
             <svg class="nav__icon nav__icon--contacts" width="16" height="12">
             <use href="./images/icons.svg#envelope"></use>
@@ -56,6 +57,18 @@
             </svg>+38 096 111 11 11</a>
         </li>
       </ul>
+    </div>
+
+      <button class="menu-btn js-open-menu" type="button"
+      aria-expanded="false"
+      aria-controls="mobile-menu" >
+        <svg width="40" height="40">
+          <use class="icon-menu" href="./images/menu-close.svg#menu_40px">
+            
+          </use>
+        </svg>
+
+      </button>
     </div>
     </header>
     <main>
@@ -126,19 +139,33 @@
       </div>
       </section>
        <!--About us-->
-      <section class="section">
+      <section class="section reviews">
         <div class="container">
-        <h2 class="section__title">Чим ми займаємося</h2>
-        <ul class="section__feature-list list">
-          <li class="list-item__group">
+        <h2 class="section__title list-item__section">Чим ми займаємося</h2>
+        <ul class="section__feature-list list reviews-set ">
+          <li class="list-item__group reviews-item">
             <div class="thumb">
-             <img
-              class="thumb__img"
-              src="./images/about/box1.jpg"
-              alt="написання коду, чоловічі руки на клавіатурі"
-              width="370"
-              height="294"
-            />
+              <picture>
+                <source 
+                srcset="
+                ./images/about/imgdesc@1x.png 1x,
+                ./images/about/imgdesc@2x.png 2x"
+
+                media="(min-width: 1200px)"
+                />
+                <img  class="thumb__img"
+                srcset="
+                ./images/about/imgdesc@1x.png 1x,
+                ./images/about/imgdesc@2x.png 2x
+                "
+                 
+                 src="./images/about/box1.jpg"
+                 alt="написання коду, чоловічі руки на клавіатурі"
+                 width="370"
+                 
+               />
+              </picture>
+             
             <div class="overlay">
               <p class="overlay__name">Десктопні додатки</p>
             </div>
@@ -147,13 +174,24 @@
         
           <li class="list-item__group">
             <div class="thumb">
-            <img
-              class="thumb__img"
+              <picture>
+                <source 
+                srcset="
+                ./images/about/imgdesc@1x-1.png 1x,
+                ./images/about/imgdesc@2x-1.png 2x"
+                />
+                <img class="thumb__img"
+            srcset="
+            ./images/about/imgdesc@1x-1.png 1x,
+            ./images/about/imgdesc@2x-1.png 2x
+            "
               src="./images/about/box2.jpg"
               alt="жіночі руки на клавіатурі ноутбука, в правій руці мобільний телефон, на екрані ноутбука зображення мобільних телефонів"
               width="370"
-              height="294"
+            
             />
+              </picture>
+            
             <div class="overlay">
               <p class="overlay__name">Мобільні додатки</p>
             </div>
@@ -161,13 +199,25 @@
           </li>
           <li class="list-item__group">
             <div class="thumb">
-            <img
-              class="thumb__img"
+              <picture>
+                <source
+                srcset="
+                ./images/about/imgdesc@1x-2.png 1x,
+                ./images/about/imgdesc@2x-2.png 2x"
+
+                media="(min-width: 1200px)"
+                />
+                <img class="thumb__img"
+            srcset="./images/about/imgdesc@1x-2.png 1x,
+            ./images/about/imgdesc@2x-2.png 2x
+            "
               src="./images/about/box3.jpg"
               alt="планшет у руках на фоні ком'пютера"
               width="370"
-              height="294"
+             
             />
+              </picture>
+            
             <div class="overlay">
               <p class="overlay__name">Дизайнерські рішення</p>
             </div>
@@ -179,16 +229,40 @@
       <!--our team-->
       <section class="section section__team">
         <div class="container">
-        <h2 class="section__title">Наша команда</h2>
+        <h2 class="section__title list-item__section">Наша команда</h2>
         <ul class=" section__feature-list list">
           <li class="list-item">
-            <img
+            <!-- <img
               class="list-item__img"
+              srcset="./images\team\img_sm-@1x.jpg 1x, ./images\team\img_sm-@2x.jpg 2x"
               src="./images/team/img1.jpg"
               alt="чоловік з борідкою в окулярах та коричневій сорочці"
-              width="270"
-              height="260"
-            />
+             
+            /> -->
+
+            <img
+              class="list-item__img"
+              srcset="
+              ./images/team/w/img_270.jpg 270w, 
+              ./images/team/w/img_450.jpg 450w, 
+              ./images/team/w/img-354.jpg 354w, 
+              ./images/team/w/img_540.jpg 540w, 
+              ./images/team/w/img_708.jpg 708w, 
+              ./images/team/w/img_900.jpg 900w, 
+              "
+              sizes="(min-width: 1200px) 270px, 
+              (min-width: 768px) 354px,
+               (min-width: 480px) 450px, 
+               100vw"
+
+            
+              src="./images/team/img1.jpg"
+              alt="чоловік з борідкою в окулярах та коричневій сорочці"
+           
+              />
+          
+              
+  
             <div class="team">
             <h3 class="team__name">Ігор Дем'яненко</h3>
             <p class="team__position">Product Designer</p>
@@ -243,10 +317,25 @@
           <li class="list-item">
             <img
               class="list-item__img"
-              src="./images/team/img2.jpg"
+              srcset="
+              ./images/team/w/img_270-1.jpg 270w, 
+              ./images/team/w/img_450-1.jpg 450w, 
+              ./images/team/w/img-354-1.jpg 354w, 
+              ./images/team/w/img_540-1.jpg 540w, 
+              ./images/team/w/img_708-1.jpg 708w, 
+              ./images/team/w/img_900-1.jpg 900w, 
+              "
+              sizes="(min-width: 1200px) 270px, 
+              (min-width: 768px) 354px,
+               (min-width: 480px) 450px, 
+               100vw"
+
+            
+              src="./images/team/w/img_450-1.jpg"
+             
               alt="блондинка в окулярах та піджаку"
-              width="270"
-              height="260"
+             
+             
             />
             <div class="team">
             <h3 class="team__name">Ольга Рєпіна</h3>
@@ -303,10 +392,25 @@
           <li class="list-item">
             <img
               class="list-item__img"
-              src="./images/team/img3.jpg"
+
+              srcset="
+              ./images/team/w/img_270-2.jpg 270w, 
+              ./images/team/w/img_450-2.jpg 450w, 
+              ./images/team/w/img-354-2.jpg 354w, 
+              ./images/team/w/img_540-2.jpg 540w, 
+              ./images/team/w/img_708-2.jpg 708w, 
+              ./images/team/w/img_900-2.jpg 900w, 
+              "
+              sizes="(min-width: 1200px) 270px, 
+              (min-width: 768px) 354px,
+               (min-width: 480px) 450px, 
+               100vw"
+
+            
+              src="./images/team/w/img_450-2.jpg"
+            
               alt="чоловік з борідкою в світлій сорочці"
-              width="270"
-              height="260"
+             
             />
             <div class="team">
             <h3 class="team__name">Микола Тарасов</h3>
@@ -362,10 +466,25 @@
           <li class="list-item">
             <img
               class="list-item__img"
-              src="./images/team/img4.jpg"
+
+              srcset="
+              ./images/team/w/img_270-3.jpg 270w, 
+              ./images/team/w/img_450-3.jpg 450w, 
+              ./images/team/w/img-354-3.jpg 354w, 
+              ./images/team/w/img_540-3.jpg 540w, 
+              ./images/team/w/img_708-3.jpg 708w, 
+              ./images/team/w/img_900-3.jpg 900w, 
+              "
+              sizes="(min-width: 1200px) 270px, 
+              (min-width: 768px) 354px,
+               (min-width: 480px) 450px, 
+               100vw"
+
+            
+              src="./images/team/w/img_450-3.jpg"
+             
               alt="чоловік з борідкою та в окулярах, в чорній футболці "
-              width="270"
-              height="260"
+           
             />
             <div class="team">
             <h3 class="team__name">Михайло Єрмаков</h3>
@@ -424,7 +543,7 @@
       <!--Clients-->
       <section class="section">
         <div class="container">
-        <h2 class="section__title">Постійні клієнти</h2>
+        <h2 class="section__title list-item__section">Постійні клієнти</h2>
           <ul class="clients">
           <li class="clients__item">
             <a class="clients__link"
@@ -496,7 +615,7 @@
       </div>
       </section>
     </main>
-    <!--Footer-->
+    <!-- Footer--> 
     <footer class="footer">
       <div class="container footer__nav">
         <div>
@@ -572,8 +691,8 @@
         </li>
       </ul>
     </div>
-   <!--Form-->
-      <div  class="form">
+   <!-- Form-->
+       <div  class="form">
         <p class="form__nav">Підпишіться на розсилку</p>
         <form class="form__field" >
         <label class="">
@@ -587,7 +706,7 @@
       </div>
     </form>
     </div>
-  </footer>
+  </footer> 
   <!--Modal window-->
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
@@ -648,6 +767,49 @@
 </form>
     </div> 
   </div>
+  <!--Mobile menu-->
+ 
+  <div class="menu-container  js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu">
+      <svg width="40" height="40">
+        <use class="icon-close" href="./images/menu-close.svg#close_40px"></use>
+
+      </svg>
+    </button>
+
+    <ul class="mobile-menu list">
+      <li class="menu-item  menu-item-socials">
+        <a href="" class=" menu-link link current ">Студія</a>
+      </li>
+      <li class="menu-item">
+        <a href="" class=" menu-link link">Портфоліо</a>
+      </li>
+      <li class="menu-item">
+        <a href="" class=" menu-link link">Контакти</a>
+      </li>
+     
+    </ul>
+    <ul class=" list">
+      <li class="mobile-contacts"><a href="" class="menu-contacts link current">+38 096 111 11 11</a></li>
+      <li class="mobile-contacts"><a href="" class="menu-mail link">info@devstudio.com</a></li>
+      
+    </ul>
+    <ul class="mobile-socials list">
+      <li><a href="" class="socials-link link">Instagram</a></li>
+      <li><a href="" class="socials-link link">Twitter</a></li>
+      <li><a href="" class="socials-link link">Facebook</a></li>
+      <li><a href="" class="socials-link link">LinkedIn</a></li>
+    </ul>
+ 
+  </div> 
   <script src="./js/modal.js"></script>
+  <!--Mobile menu-->
+  <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

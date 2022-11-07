@@ -1,4 +1,5 @@
 @import "./utils/variables";
+// @import './utils/normalize';
 @import "./utils/vissually-hidden";
 
 @import './components/container';
@@ -16,6 +17,7 @@
 
 /*section*/
 @import './components/section';
+@import './components/reviews';
 
 /*btn*/
 @import './components/btn';
@@ -49,8 +51,27 @@
 /*Register form*/
 @import './components/register-form';
 
-/*mixin*/
-@import './utils/mixin';
+
+
+
+/*Портфоліо*/
+
+
+
+@import './components/flex';
+
+@import './components/img';
+@import './components/title-portfolio';
+
+/*Menu*/
+@import './components/menu';
+
+
+
+
+
+
+
 
 
 

@@ -36,6 +36,7 @@
   margin: 0;
   padding: 0;
 }
+
 .container {
   width: 1200px;
   padding-left: 15px;
@@ -53,70 +54,170 @@
   text-decoration: none;
 }
 
+
 /*Шапка сторінки*/
 
-.header-container {
+.header__container {
   display: flex;
   align-items: center;
  
   
 }
 
-.header-nav{
-  display: flex;
-  align-items: center;
+
+.header {
+  background-color: var(--main-font);
+  border-bottom: 1px solid #ECECEC;
 }
 
-.header-list {
-  display: flex;
-  margin-left: 93px;
 
+.header .nav__link {
+  display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  
+    color: var(--main-txt-cl);
+  
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: calc(16 / 14);
+    letter-spacing: 0.02em;
+
+    transition: color var(--animation);
 }
-.header-list {
-  gap: 50px;
-}
-.list-contact{
-  margin-left: auto;
-}
-.link {
-  position: relative;
-}
-.current::after {
-content: '';
-display: block;
-left: 0;
-bottom: 0;
-
-
-position: absolute;
-
-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-width: 100%;
-height:4px ;
-
-border-radius: 2px;
-}
-.menu-link:hover::after {
-  content: '';
-display: block;
-left: 0;
-bottom: 0;
-
-
-position: absolute;
-
-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-width: 100%;
-height:4px ;
-background: var(--accent-bg-cl);
-border-radius: 2px;
+.header .link:hover,
+.header .link:focus {
+  color: var(--accent-txt-cl);
 }
 .link.current {
   color: var(--accent-txt-cl);
   transition: color var(--animation);
 }
+
+.current::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
+} 
+
+
+
+.list {
+  list-style: none;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+  .nav__list {
+  display: flex;
+  margin-left: 93px;
+  gap: 50px;
+}
+
+.nav__list--contacts {
+  margin-left: auto;
+}
+.nav__link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: var(--main-txt-cl);
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: calc(16 / 14);
+  letter-spacing: 0.02em;
+  transition: color var(--animation); 
+}
+
+
+.nav__item {
+  position: relative;
+}
+
+.nav__item--socials {
+  text-align: left;
+  display: block;
+  }
+
+  .nav__link:hover::after {
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--accent-txt-cl);
+  border-radius: 2px;
+}
+
+.nav__contacts {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.nav__contacts--link.link {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  color: var(--light-txt-cl);
+}
+
+.nav__contacts--link.link {
+  color: var(--light-txt-cl);
+  text-decoration: none;
+  fill: currentColor;
+  transition: color var(--animation);
+}
+  .nav__icon {
+  fill: none;
+  fill: var(--light-txt-cl);
+  transition: color var(--animation);
+}
+  .nav__icon:hover,
+  .nav__icon:focus {
+  color: var(--accent-txt-cl);
+}
+  .nav__icon--contacts {
+  fill: currentColor;
+}
+
+.nav__logo {
+  font-family: "Raleway", sans-serif;
+  text-decoration: none;
+
+  font-weight: 700;
+  font-size: 26px;
+  line-height: calc(31 / 26);
+  letter-spacing: 0.03em;
+  color: var(--second-txt-cl);
+}
+
+  .nav__logo.current {
+  color: var(--accent-txt-cl);
+  }
+
+
 
 
 /*Портфоліо*/
@@ -180,7 +281,7 @@ color:var(--light-txt-cl);
 
 /*flex-element*/
 
-.flex-container {
+.flex {
   display: flex;
   flex-wrap: wrap;
   margin-right: -30px;
@@ -188,6 +289,18 @@ color:var(--light-txt-cl);
 
 
 }
+.flex-list {
+  
+  margin: 0;
+  padding: 0;
+}
+.flex-list {
+  padding: 0;
+margin: 0;
+list-style: none;
+text-decoration: none;
+}
+
 
  .flex-element {
  
@@ -204,7 +317,7 @@ padding: 0;
 
 
 
-}
+} 
 .flex-title {
  margin: 0;
 padding: 0;
@@ -213,6 +326,8 @@ margin-top: 4px;
 }
 
 /*footer*/
+
+
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -336,78 +451,9 @@ align-items: baseline;
 
 
 
-/*icons*/
-.contacts-link {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
-  text-align: center;
-  color: var(--light-txt-cl);
-}
-.contacts-icon {
-  fill: currentColor;
-  
-}
-.contacts-link {
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
 
 
-/*Шапка сторінки*/
 
-.header {
-  background-color: var(--main-font);
-  border-bottom: 1px solid #ECECEC;
-}
-
-
-.header .link {
-  display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
-
-  text-decoration: none;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.02em;
-  color: var(--main-txt-cl);
-  transition: color var(--animation);
-}
-.header .link:hover,
-.header .link:focus {
-  color: var(--accent-txt-cl);
-}
-
-.link-item:hover,
-.link-item:focus {
-  color: var(--accent-txt-cl);
-}
-.link-item {
-  color: var(--lightgrey-txt-cl);
-  text-decoration: none;
-  transition: color var(--animation);
-}
-
-.menu-link {
-  font-family: "Raleway", sans-serif;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
-  color:var(--dark-txt-cl);
-}
-
-.menu-link.current,
-.link .current {
-  color: var(--accent-txt-cl);
-}
-
-.list {
-  list-style: none;
-}
 
 /*Портфоліо*/
 
@@ -423,6 +469,7 @@ align-items: baseline;
   clip-path: inset(50%);
   margin: -1px;
 }
+
 .btn {
   display: inline-block;
   padding: 6px 22px;

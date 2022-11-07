@@ -1,0 +1,22 @@
+.reviews {
+    
+      @media screen and (max-width:1199px) {
+          display: none;
+        }
+      }
+
+.reviews-set {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    margin: -15px;
+}
+
+.reviews-item {
+    width: calc((100% - 6 * 15px) / 3);
+   margin: 15px;
+}
+

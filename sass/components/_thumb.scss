@@ -1,4 +1,6 @@
 /*About us*/
+@media screen and (min-width: 1200px) {
+  
 
 .thumb {
     content: "";
@@ -8,5 +10,21 @@
  
      &__img {
     display: block;
+    width: 100%;
+    height: auto;
   }
+  @media screen and (min-width: 1200px){
+    margin: -5px;
+  }
+
+}
+}
+
+/*Портфоліо*/
+
+.thumb {
+  position: relative;
+  content: '';
+
+  overflow: hidden;
 }
