@@ -41,7 +41,7 @@ display: block;
 
       @media screen and (min-width: 768px) {
         // position: absolute;
-display: block;
+      display: block;
        
         
       }
@@ -69,6 +69,10 @@ display: block;
     background-color: inherit;
     transition: border-color var(--animation);
     margin-bottom: 20px;
+
+    @media screen and (min_width: 768px) {
+      margin-bottom: 0;
+    }
   }
 
   & input:not(:last-child) {

@@ -21,12 +21,12 @@
     <link rel="stylesheet" href="./js/modal.js"/>
   </head>
   <body class="body">
-    <header class="header">
+    <header class="header section">
       <div class="container header__container">
       <!--Menu Nav-->
        <nav class="nav">
         <a class="logo nav__logo current" href="logo"
-          >Web<span class="nav__logo">Studio</span></a
+          >Web<span class="nav__logo-dark">Studio</span></a
         >
        
     <ul class="nav__list list ">
@@ -44,14 +44,14 @@
     
      <ul class=" nav__list list nav__list--contacts">
         <li class="nav__item  nav__item--socials ">
-          <a class="nav__contacts nav__contacts--link link" href="mailto:info@devstudio.com">
+          <a class=" nav__contacts--link link" href="mailto:info@devstudio.com">
             <svg class="nav__icon nav__icon--contacts" width="16" height="12">
             <use href="./images/icons.svg#envelope"></use>
           </svg>info@devstudio.com</a>
            
         </li>
         <li class="nav__item nav__item--socials">
-          <a class="nav__contacts nav__contacts--link link" href="tel:+380961111111">
+          <a class=" nav__contacts--link link" href="tel:+380961111111">
             <svg class="nav__icon nav__icon--contacts" width="10" height="16">
               <use href="./images/icons.svg#Vector"></use>
             </svg>+38 096 111 11 11</a>
@@ -75,20 +75,20 @@
 
      <!--section Ефективні рішення для вашого бізнесу--> 
 
-      <section class="section__nav">
+      <section class="section__nav section">
         <div class="container">
           <h1 class="section__nav--title">Ефективні рішення для вашого бізнесу</h1>
-        <button class="btn" type="button" data-modal-open>Замовити послугу</button>
+        <button class="section__nav--btn btn" type="button" data-modal-open>Замовити послугу</button>
    
         </section>
 
-        <!--Наші особливості-->
+        <!-- advantages Наші особливості-->
 
-      <section class="section__feature">
+      <section class="advantages section__feature section">
         <div class="container">
         <h2 class="visually-hidden">Наші особливості</h2>
-        <ul class="section__feature-list list">
-          <li class="section__feature-item list-item">
+        <ul class="advantages-list list">
+          <li class="advantages-item">
             <div class="list-item__icon">
               <svg class="" width="70" height="70">
                 <use href="./images/icons.svg#antenna"></use>
@@ -100,7 +100,7 @@
               формування позиції.
             </p>
           </li>
-          <li class="section__feature-item list-item">
+          <li class="section__feature-item">
             <div class="list-item__icon">
               <svg class="" width="70" height="70">
                 <use href="./images/icons.svg#clock"></use>
@@ -112,7 +112,7 @@
               у себе.
             </p>
           </li>
-          <li class="section__feature-item list-item">
+          <li class="section__feature-item">
             <div class="list-item__icon">
               <svg class="feature-icon" width="70" height="70">
                 <use href="./images/icons.svg#diagram"></use>
@@ -123,7 +123,7 @@
               Так само консультація з широким активом значною мірою зумовлює.
             </p>
           </li>
-          <li class="section__feature-item list-item">
+          <li class="section__feature-item">
             <div class="list-item__icon">
               <svg class="" width="70" height="70">
                 <use href="./images/icons.svg#astronaut"></use>
@@ -142,8 +142,8 @@
       <section class="section reviews">
         <div class="container">
         <h2 class="section__title list-item__section">Чим ми займаємося</h2>
-        <ul class="section__feature-list list reviews-set ">
-          <li class="list-item__group reviews-item">
+        <ul class=" list reviews-set ">
+          <li class=" reviews-item">
             <div class="thumb">
               <picture>
                 <source 
@@ -172,7 +172,7 @@
           </div>
           </li>
         
-          <li class="list-item__group">
+          <li class=" reviews-item">
             <div class="thumb">
               <picture>
                 <source 
@@ -197,7 +197,7 @@
             </div>
           </div>
           </li>
-          <li class="list-item__group">
+          <li class="reviews-item">
             <div class="thumb">
               <picture>
                 <source
@@ -227,11 +227,11 @@
        </div>
       </section>
       <!--our team-->
-      <section class="section section__team">
+      <section class="section section__team team__background">
         <div class="container">
         <h2 class="section__title list-item__section">Наша команда</h2>
-        <ul class=" section__feature-list list">
-          <li class="list-item">
+        <ul class=" team__card list">
+          <li class="team__item">
             <!-- <img
               class="list-item__img"
               srcset="./images\team\img_sm-@1x.jpg 1x, ./images\team\img_sm-@2x.jpg 2x"
@@ -314,7 +314,7 @@
           </li>
         </ul>
       </div>
-          <li class="list-item">
+          <li class="team__item">
             <img
               class="list-item__img"
               srcset="
@@ -389,7 +389,7 @@
           </div>
 
           </li>
-          <li class="list-item">
+          <li class="team__item">
             <img
               class="list-item__img"
 
@@ -463,7 +463,7 @@
             </ul>
           </div>
           </li>
-          <li class="list-item">
+          <li class="team__item">
             <img
               class="list-item__img"
 
@@ -541,9 +541,9 @@
       </div>
       </section>
       <!--Clients-->
-      <section class="section">
+      <section class="clients__section section">
         <div class="container">
-        <h2 class="section__title list-item__section">Постійні клієнти</h2>
+        <h2 class="list-item__section">Постійні клієнти</h2>
           <ul class="clients">
           <li class="clients__item">
             <a class="clients__link"
@@ -616,9 +616,9 @@
       </section>
     </main>
     <!-- Footer--> 
-    <footer class="footer">
+    <footer class="footer section">
       <div class="container footer__nav">
-        <div>
+        <div class="contacts">
       <a class="logo footer__logo active" href="logo"
         >Web<span class="footer__logo">Studio</span></a>
       <address class="adress">
@@ -698,7 +698,7 @@
         <label class="">
         <input class="form__input" type="email" name="mail" id="mail" placeholder="E-mail">
           </label>
-          <button class="form__btn" type="submit">
+          <button class="form__btn btn" type="submit">
             Підписатися<svg class="btn__icon" width="24" height="24">
               <use href="./images/icon-send.svg#icon-send"></use>
             </svg></button>
