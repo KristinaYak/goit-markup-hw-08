@@ -384,8 +384,8 @@
 
 /*section*/
 .section__nav {
+  width: 100%;
   max-width: 480px;
-  height: 400px;
   padding-top: 118px;
   padding-bottom: 118px;
   background-repeat: no-repeat;
@@ -394,6 +394,7 @@
   background-color: var(--secondary-bg-cl);
   text-align: center;
   color: #FFFFFF;
+  margin: 0 auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(..//images/about/Header\ img_sm-@1x.png);
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(..//images/about/Header\ img_sm-@1x.png);
 }
@@ -432,7 +433,7 @@
 @media screen and (min-width: 480px) and (min-width: 768px) and (min-width: 768px) {
   .section__nav {
     max-width: 768px;
-    height: 400px;
+    width: 100%;
     padding-top: 118px;
     padding-bottom: 118px;
   }
@@ -440,7 +441,7 @@
 @media screen and (min-width: 480px) and (min-width: 768px) and (min-width: 1200px) {
   .section__nav {
     max-width: 1600px;
-    height: 600px;
+    width: 100%;
     padding-top: 200px;
     padding-bottom: 200px;
   }
