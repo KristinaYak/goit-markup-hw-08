@@ -29,7 +29,7 @@
     letter-spacing: 0.03em;
     font-family: "Roboto", sans-serif;
     text-decoration: none;
- margin: 0;
+//  margin: 0;
   }
   
   
@@ -121,7 +121,7 @@ text-align: center;
   line-height: calc(24 / 14);
   color: var(--light-txt-cl);
   letter-spacing: 0.03em;
-  margin: 0;
+  margin: 0 auto;
 
 }
 .list-item__list:not(:last-child) {

@@ -14,6 +14,7 @@
 // }
 
 .section__team {
+
   @media screen and (min-width: 768px){
     padding-top: 60px;
     padding-bottom: 60px;
@@ -36,8 +37,7 @@
     justify-content: center;
     text-align: center;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+    
     gap: 30px;
   }
 
