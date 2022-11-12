@@ -1,5 +1,6 @@
 /*our team*/
 .team__background {
+
     background-color: #f5f4fa;
 }
 
@@ -31,17 +32,19 @@
   }
 }
   .team__card {
+  
     margin: 0;
     padding: 0;
     
     justify-content: center;
     text-align: center;
     display: flex;
-    
+    flex-wrap: wrap;
     gap: 30px;
   }
 
   .team__item {
+    
     width: 100%;
     @media screen and (min-width: 480px) {
       gap: 30px;
@@ -92,5 +95,6 @@
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: rgba(0, 0, 0, 0.12);
+         
         }
     
