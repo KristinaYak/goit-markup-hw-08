@@ -100,8 +100,8 @@
   text-transform: uppercase;
   line-height: calc(16 / 14);
   color: var(--main-txt-cl);
-  margin-bottom: 10px;
-
+  
+text-align: center;
   
   @media screen and (min-width: 768px) {
 
@@ -123,6 +123,9 @@
   letter-spacing: 0.03em;
   margin: 0;
 
+}
+.list-item__list:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 
