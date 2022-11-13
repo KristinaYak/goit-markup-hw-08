@@ -1,56 +1,59 @@
 /*Портфоліо*/
 
-.flex-container {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -30px;
-    margin-bottom: -30px;
-    padding: 0;
+// .flex-container {
+//     // display: flex;
+//     // flex-wrap: wrap;
+//     // margin-right: -30px;
+//     // margin-bottom: -30px;
+//     // padding: 0;
     
+//     @media screen and (min-width: 768px) {
+      
+//     }
   
-  }
+//   }
  
-  .list {
-    padding: 0;
-  margin: 0;
-  list-style: none;
-  text-decoration: none;
-  }
+  // .list {
+  //   padding: 0;
+  // margin: 0;
+  // list-style: none;
+  // text-decoration: none;
+  // }
 
 
-  .flex-element {
+  // .flex-element {
  
-    margin-right: 30px;
-    margin-bottom: 30px;
+  //   margin-right: 30px;
+  //   margin-bottom: 30px;
    
-  }
-  .flex-main {
-    display: block;
-    margin: 0;
-    padding: 0;
+  // }
+  // .flex-main {
+  //   display: block;
+  //   margin: 0;
+  //   padding: 0;
     
     
     
-    }
-    .flex-title {
-        margin: 0;
-       padding: 0;
-       margin-top: 4px;
+  //   }
+  //   .flex-title {
+  //       margin: 0;
+  //      padding: 0;
+  //      margin-top: 4px;
        
-       }
+  //      }
 
-  .link-group {
-    display: block;
-    text-decoration: none;
-    transition: box-schadow var(--animation);
-  }
-  .link-group:hover,
-  .link-group:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
-  }
+  // .link-group {
+  //   display: block;
+  //   text-decoration: none;
+  //   transition: box-schadow var(--animation);
+  // }
+  // .link-group:hover,
+  // .link-group:focus {
+  //   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16); 
+  // }
 
-  .link-group:hover .overlay,
-  .link-group:focus .overlay {
+  // .link-group:hover .overlay,
+  // .link-group:focus .overlay {
 
-     transform: translateY(0);
-  }
+  //    transform: translateY(0);
+  // }
