@@ -79,10 +79,13 @@
    justify-content: center;
   }
     &__nav {
+      @media screen and (min-width: 320px){
     // margin: 0 auto;
-    margin-bottom: 60px;
+    // margin-bottom: 60px;
     display: flex;
     flex-direction: column;
+    margin-bottom: 60px;
+      }
 
   
 
@@ -91,9 +94,11 @@ align-items: center;
     }
 
     @media screen and (min-width: 768px) {
+    align-items: baseline;
+    display: flex;
     
-      margin-left: 165px;
-      margin-right: 0;
+      // margin-left: 165px;
+      // margin-right: 0;
     }
 
     @media screen and (min-width: 1200px) {

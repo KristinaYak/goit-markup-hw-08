@@ -24,15 +24,18 @@
     justify-content: center;
     align-items: baseline;
    
+   
 
     }
 
     @media screen and (min-width: 1200px) {
       align-items: baseline;
+      flex-wrap: nowrap;
       // justify-content: flex-start;
-      text-align: left;
+      // text-align: left;
     }
   }
+
   
     &__logo {
       margin-bottom: 20px;
@@ -45,13 +48,25 @@
     color: var(--accent-txt-cl);
   }
 }
+
 .contacts {
   
 
   @media screen and (min-width: 480px) {
     text-align: center;
   }
+ 
+  @media screen  and (min-width: 768px){
+    // margin-bottom: 60px;
+ 
+    // display: flex;
+    margin-right: 165px;
+    
+  }
+
   @media screen  and (min-width: 1200px){
     text-align: left;
+   margin-right: 0;
+    display: block;
   }
 }

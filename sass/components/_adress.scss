@@ -4,20 +4,19 @@
     margin-top: 20px;
  
     &__item {
-   
-    display: block;
     text-align: center;
    
-@media screen and (max-width: 767px) {
-  margin-bottom: 60px;
-  
+@media screen and (min-width: 768px) {
+ 
+  text-align: center;
+ 
 }
     
 
     @media screen and (min-width: 1200px) {
     
    text-align: left;
-   display: block;
+
      
      
     }
@@ -64,6 +63,10 @@
     &__contacts:hover,
     &__contacts:focus {
     color: var(--accent-txt-cl);
+  }
+  &__list {
+    margin-bottom: 60px;
+    
   }
 }
 

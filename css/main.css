@@ -892,15 +892,17 @@
       -ms-flex-pack: center;
           justify-content: center;
 }
-.socials__nav {
-  margin-bottom: 60px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+@media screen and (min-width: 320px) {
+  .socials__nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 60px;
+  }
 }
 @media screen and (min-width: 480px) {
   .socials__nav {
@@ -911,8 +913,12 @@
 }
 @media screen and (min-width: 768px) {
   .socials__nav {
-    margin-left: 165px;
-    margin-right: 0;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1047,7 +1053,8 @@
     -webkit-box-align: baseline;
         -ms-flex-align: baseline;
             align-items: baseline;
-    text-align: left;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 .footer__logo {
@@ -1063,9 +1070,16 @@
     text-align: center;
   }
 }
+@media screen and (min-width: 768px) {
+  .contacts {
+    margin-right: 165px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .contacts {
     text-align: left;
+    margin-right: 0;
+    display: block;
   }
 }
 
@@ -1074,18 +1088,16 @@
   margin-top: 20px;
 }
 .adress__item {
-  display: block;
   text-align: center;
 }
-@media screen and (max-width: 767px) {
+@media screen and (min-width: 768px) {
   .adress__item {
-    margin-bottom: 60px;
+    text-align: center;
   }
 }
 @media screen and (min-width: 1200px) {
   .adress__item {
     text-align: left;
-    display: block;
   }
 }
 .adress__item:not(:last-child) {
@@ -1116,6 +1128,9 @@
 }
 .adress__contacts:hover, .adress__contacts:focus {
   color: var(--accent-txt-cl);
+}
+.adress__list {
+  margin-bottom: 60px;
 }
 
 /*Form*/
