@@ -61,6 +61,7 @@
   }
 
     &__title {
+      display: inline-block;
         font-family: "Roboto";
     color: var(--main-bg-cl);
    font-style: normal;
@@ -78,8 +79,10 @@
    justify-content: center;
   }
     &__nav {
-    margin: 0 auto;
+    // margin: 0 auto;
     margin-bottom: 60px;
+    display: flex;
+    flex-direction: column;
 
   
 

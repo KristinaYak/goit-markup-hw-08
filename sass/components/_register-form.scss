@@ -63,11 +63,28 @@
 
 
   &--icon {
-  position: absolute;
-  top: 63%;
+    @media screen and (min-width: 320px) {
+      position: absolute;
+      top: 63%;
+      right: 24%;
+    
+      transform: translateY(-50%);
+      transition: fill var(--animation);
+    }
+    @media screen and (min-width: 480px) {
+      top: 63%;
+      right: 54%;
+    }
+    @media screen and (min-width: 768px) {
+      top: 63%;
+      right: 53%;
+    }
+
+
+  @media screen and (min-width: 1200px) {
+    top: 63%;
   right: 62%;
-  transform: translateY(-50%);
-  transition: fill var(--animation);
+  }
 }
 
 
@@ -138,27 +155,67 @@
 }
 
   &--desk {
-  user-select: none;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: var(24 / 14);
+    @media screen and (min-width: 320px) {
+      font-size: 10px;
+      user-select: none;
+      font-style: normal;
+      font-weight: 400;
+     
+      line-height: var(12 / 10);
+    
+      letter-spacing: 0.03em;
+    
+      color: var(--light-txt-cl);
+  // line-height: var(14 / 12);
+    }
+    @media screen and (min-width: 480px) {
+    
+      font-size: 12px;
+      line-height: var(14 / 12);
+    
+    }
+    @media screen and (min-width: 768px) {
+    
+      font-size: 12px;
+      line-height: var(14 / 12);
+    }
 
-  letter-spacing: 0.03em;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: var(24 / 14);
+    }
 
-  color: var(--light-txt-cl);
 }
 
   &--link {
-  font-style: normal;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: var(24 / 14);
+    @media screen and (min-width: 320px) {
+      font-style: normal;
+      font-weight: 400;
+      font-size: 10px;
+      line-height: var(12 / 10);
+    
+      letter-spacing: 0.03em;
+      text-decoration-line: underline;
+    
+      color: var(--accent-txt-cl);
+    }
+    @media screen and (min-width: 480px) {
+    
+      font-size: 12px;
+      line-height: var(14 / 12);
+    
+    }
+    @media screen and (min-width: 768px) {
+    
+      font-size: 12px;
+      line-height: var(14 / 12);
+    }
 
-  letter-spacing: 0.03em;
-  text-decoration-line: underline;
+    @media screen and (min-width: 1200px) {
+      font-size: 14px;
+      line-height: var(24 / 14);
+    }
 
-  color: var(--accent-txt-cl);
 }
 
   &--btn {
